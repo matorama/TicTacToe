@@ -1,0 +1,32 @@
+h1, h3 {
+    text-align: center;
+    color: rgb(161, 39, 41);
+}
+
+.hole-container {
+    width: 430px;
+    height: 430px;
+    margin: 50px auto;
+}
+
+.hole {
+    border: 1px solid rgb(161, 39, 41);
+    /*border-radius: 50%;*/
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.x {
+   /*background: url(http://vignette4.wikia.nocookie.net/landbeforetime/images/b/bb/X_mark_red.png/revision/latest?cb=20141004211715); 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;*/
+   background-color: blue;
+}
+
+.o {
+  background-color: green;
+}
