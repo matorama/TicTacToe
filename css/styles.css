@@ -20,11 +20,11 @@ h1, h3 {
 }
 
 .x {
-   /*background: url(http://vignette4.wikia.nocookie.net/landbeforetime/images/b/bb/X_mark_red.png/revision/latest?cb=20141004211715); 
+   background: url(http://vignette4.wikia.nocookie.net/landbeforetime/images/b/bb/X_mark_red.png/revision/latest?cb=20141004211715); 
    background-position: center;
    background-size: cover;
-   background-repeat: no-repeat;*/
-   background-color: blue;
+   background-repeat: no-repeat;
+   /*background-color: blue;*/
 }
 
 .o {
