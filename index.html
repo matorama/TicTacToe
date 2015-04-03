@@ -14,8 +14,8 @@
 	<body>
         <div class="hole-container" ng-controller="TicTacToeController as main">
             <h1>TicTacToe</h1>
-            <h3>{{ main.message }}</h3>
-            <div ng-repeat="hole in main.holes track by $index" 
+            <h3>{{ main.game.message }}</h3>
+            <div ng-repeat="hole in main.game.holes track by $index" 
             ng-click="main.playerTurn($index)" 
             ng-class="{x: hole.xIsHere, o: hole.oIsHere}" class="hole">
             </div>
