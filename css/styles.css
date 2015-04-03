@@ -1,4 +1,10 @@
-h1, h3 {
+h1 {
+    text-align: center;
+    color: rgb(161, 39, 41);
+}
+
+
+h3 {
     text-align: center;
     color: rgb(161, 39, 41);
 }
@@ -20,13 +26,17 @@ h1, h3 {
 }
 
 .x {
-   background: url(http://vignette4.wikia.nocookie.net/landbeforetime/images/b/bb/X_mark_red.png/revision/latest?cb=20141004211715); 
+   background: url(X_mark_black.jpg); 
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
+   margin:10px;
    /*background-color: blue;*/
 }
 
 .o {
-  background-color: green;
+  background: url(O_mark_red.png); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
