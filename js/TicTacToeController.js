@@ -28,17 +28,23 @@ angular
         self.moveXHere = moveXHere; 
         self.moveOHere = moveOHere;
         self.playerTurn = playerTurn;
+        self.message ="";
+        self.reset = reset;
 
 
         function playerTurn($index){
-            self.counter++;
-            if (self.counter % 2 === 0){
-                moveXHere($index);
-                OMoves.push($index)
-                checkForXWin()
-            }else {
-                moveOHere($index);
-                checkForOWin()
+            if ((self.holes[$index].xIsHere == false) && (self.holes[$index].oIsHere == false)){
+                self.counter++;
+                checkForTie();
+                if (self.counter % 2 === 0){
+                    moveOHere($index);
+                    checkForOWin();
+             
+                }else {
+                   
+                    moveXHere($index);
+                    checkForXWin();
+                }
             }
         }
 
@@ -56,58 +62,96 @@ angular
         function checkForXWin (){
             if ((self.holes[0].xIsHere === true) && (self.holes[1].xIsHere === true) && (self.holes[2].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[3].xIsHere === true) && (self.holes[4].xIsHere === true) && (self.holes[5].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[6].xIsHere === true) && (self.holes[7].xIsHere === true) && (self.holes[8].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[0].xIsHere === true) && (self.holes[3].xIsHere === true) && (self.holes[6].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[1].xIsHere === true) && (self.holes[4].xIsHere === true) && (self.holes[7].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[2].xIsHere === true) && (self.holes[5].xIsHere === true) && (self.holes[8].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[0].xIsHere === true) && (self.holes[4].xIsHere === true) && (self.holes[8].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             } else if
                 ((self.holes[2].xIsHere === true) && (self.holes[4].xIsHere === true) && (self.holes[6].xIsHere === true)){
                 console.log("X won!");
+                self.message = "Congratulations! Player X Won!"
             }
         }
 
         function checkForOWin (){
             if ((self.holes[0].oIsHere === true) && (self.holes[1].oIsHere === true) && (self.holes[2].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[3].oIsHere === true) && (self.holes[4].oIsHere === true) && (self.holes[5].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[6].oIsHere === true) && (self.holes[7].oIsHere === true) && (self.holes[8].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[0].oIsHere === true) && (self.holes[3].oIsHere === true) && (self.holes[6].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[1].oIsHere === true) && (self.holes[4].oIsHere === true) && (self.holes[7].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[2].oIsHere === true) && (self.holes[5].oIsHere === true) && (self.holes[8].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[0].oIsHere === true) && (self.holes[4].oIsHere === true) && (self.holes[8].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             } else if
                 ((self.holes[2].oIsHere === true) && (self.holes[4].oIsHere === true) && (self.holes[6].oIsHere === true)){
                 console.log("O won!");
+                self.message = "Congratulations! Player O Won!"
             }
         }
 
+        function checkForTie(){
+            if (self.counter >= 9){
+                console.log("It's a tie")
+                self.message = "It's a tie!"
+            }
+        }
 
+        function reset(){
+            console.log("Reset the board")
+            self.counter = 0;
+            self.message = ""
+             self.holes = [
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false},
+            {xIsHere: false, oIsHere:false}
+        ];
+        }
  
 
         (function init(){
