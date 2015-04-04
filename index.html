@@ -2,6 +2,7 @@
 <html ng-app="TicTacToeApp">
 	<head>
 		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 		<title>TicTacToe!</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/styles.css">
@@ -13,13 +14,13 @@
 	</head>
 	<body>
         <div class="hole-container" ng-controller="TicTacToeController as main">
-            <h1>TicTacToe</h1>
+            <h1>Tic Tac Toe</h1>
             <h3>{{ main.game.message }}</h3>
             <div ng-repeat="hole in main.game.holes track by $index" 
             ng-click="main.playerTurn($index)" 
             ng-class="{x: hole.xIsHere, o: hole.oIsHere}" class="hole">
             </div>
-            <button ng-click="main.reset()"> Reset </button>
+            <button ng-click="main.reset()"> Reset Gameboard </button>
         </div>
 	</body>
 </html>

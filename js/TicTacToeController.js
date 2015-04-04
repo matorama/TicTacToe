@@ -77,70 +77,70 @@ angular
         function checkForXWin (){
             if ((self.game.holes[0].xIsHere === true) && (self.game.holes[1].xIsHere === true) && (self.game.holes[2].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[3].xIsHere === true) && (self.game.holes[4].xIsHere === true) && (self.game.holes[5].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[6].xIsHere === true) && (self.game.holes[7].xIsHere === true) && (self.game.holes[8].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[0].xIsHere === true) && (self.game.holes[3].xIsHere === true) && (self.game.holes[6].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[1].xIsHere === true) && (self.game.holes[4].xIsHere === true) && (self.game.holes[7].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[2].xIsHere === true) && (self.game.holes[5].xIsHere === true) && (self.game.holes[8].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[0].xIsHere === true) && (self.game.holes[4].xIsHere === true) && (self.game.holes[8].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             } else if
                 ((self.game.holes[2].xIsHere === true) && (self.game.holes[4].xIsHere === true) && (self.game.holes[6].xIsHere === true)){
                 console.log("X won!");
-                self.game.message = "Congratulations! Player X Won!"
+                self.game.message = "Cloud Wins!"
             }
         }
 
         function checkForOWin (){
             if ((self.game.holes[0].oIsHere === true) && (self.game.holes[1].oIsHere === true) && (self.game.holes[2].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[3].oIsHere === true) && (self.game.holes[4].oIsHere === true) && (self.game.holes[5].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[6].oIsHere === true) && (self.game.holes[7].oIsHere === true) && (self.game.holes[8].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[0].oIsHere === true) && (self.game.holes[3].oIsHere === true) && (self.game.holes[6].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[1].oIsHere === true) && (self.game.holes[4].oIsHere === true) && (self.game.holes[7].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[2].oIsHere === true) && (self.game.holes[5].oIsHere === true) && (self.game.holes[8].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[0].oIsHere === true) && (self.game.holes[4].oIsHere === true) && (self.game.holes[8].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             } else if
                 ((self.game.holes[2].oIsHere === true) && (self.game.holes[4].oIsHere === true) && (self.game.holes[6].oIsHere === true)){
                 console.log("O won!");
-                self.game.message = "Congratulations! Player O Won!"
+                self.game.message = "Sun Wins!"
             }
         }
 
@@ -155,7 +155,7 @@ angular
             console.log("Reset the board")
             self.game.counter = 0;
             self.game.message = ""
-             self.game.holes = [
+            self.game.holes = [
             {xIsHere: false, oIsHere:false},
             {xIsHere: false, oIsHere:false},
             {xIsHere: false, oIsHere:false},

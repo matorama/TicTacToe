@@ -1,32 +1,62 @@
+body {
+  /*background-color: lightblue;*/
+  background: url(SkyBlueSky.jpg); 
+  /*background-position: center;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Walter Turncoat', cursive;
+}
+
 h1 {
     text-align: center;
-    color: rgb(161, 39, 41);
+    color: white;
+    text-shadow 2px 2px black;
+    font-size: 64px;
+    margin-bottom: 0px;
+     
 }
 
 
 h3 {
     text-align: center;
-    color: rgb(161, 39, 41);
+    color: white;
+    text-shadow 2px 2px black;
+    margin-top: 0px;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+button {
+  text-align: center;
+  padding: 15px;
+  margin-left: 124px;
+  margin-top: 20px;
+  border-radius: 48px;
+  background-color: white;
+  border-color: rgba(24, 40, 223, 0.76);
+  font-size: 22px;
+  color: rgb(24, 24, 138);
 }
 
 .hole-container {
-    width: 430px;
-    height: 430px;
+    width: 480px;
+    height: 640px;
     margin: 50px auto;
 }
 
 .hole {
-    border: 1px solid rgb(161, 39, 41);
+    border: 1px solid rgba(24, 40, 223, 0.76);
     /*border-radius: 50%;*/
-    width: 100px;
+    width: 115px;
     height: 100px;
     display: inline-block;
     padding: 10px;
     margin: 10px;
+    background-color: white;
 }
 
 .x {
-   background: url(X_mark_black.jpg); 
+   background: url(cloud.png); 
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -35,8 +65,9 @@ h3 {
 }
 
 .o {
-  background: url(O_mark_red.png); 
+  background: url(sun.jpg); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
